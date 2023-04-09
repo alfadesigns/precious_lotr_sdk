@@ -7,7 +7,7 @@ def main():
     api_key = input().strip()
     
     if len(api_key) < 13:
-        api_key = 'JiWYLCEOboEgzPoi14gd'
+        api_key = ''
     sdk = LOTRSDK(api_key)
     movies = sdk.get_movies()
     movie_ids = [movie['_id'] for movie in movies['docs']]
